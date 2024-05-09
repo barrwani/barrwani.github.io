@@ -168,5 +168,5 @@ A lot of the criticism we received from this game revolved around UX-related iss
 Enough with the bad though, this was our first major project and my first where I really felt like I was a gameplay programmer rather than just a coder making jam games. I gained a lot of useful knowledge about game feel, scope, and polish which I otherwise wouldn't have learned. Although there were flaws to it, for our first project we did pretty good and I'm happy with what we managed to achieve.  
 
 
-For more detailed and general thoughts on what we learned as a team from this project, have a look at the [post-mortem](https://barwani.eu.org/blog/kalindis-postmortem/)
+For more detailed and general thoughts on what we learned as a team from this project, have a look at the [post-mortem](https://barwani.eu.org/blog/kalindis-postmortem)
 
