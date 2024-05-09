@@ -44,7 +44,7 @@ The main mechanic of the game was a sort of cross between Doodle Jump and Angry 
 Below is a demonstration from the prototyping stages:
 
 <center>
-<img src="/assets/mvmtprototype.gif" width="640" height="360"></img>
+<img src="/assets/mvmtprototype.gif" width="640" height="360">
 </center>
 
 Calculating the direction to go in and applying that direction to the players velocity vectors was simple enough:
@@ -95,7 +95,7 @@ The obstacles themselves were quite simple, with the sticky wall just halting th
 What was most difficult to program was actually the item/obstacle spawner. Since the game was an infinite scroller I had to make it get more difficult somehow, so making sure that the difficult curve was reasonable and rewarding was important. 
 
 <center>
-<img src="/assets/threshold.gif" width="640" height="360"></img>
+<img src="/assets/threshold.gif" width="640" height="360">
 </center>
 
 I used a collision area which constantly moves upwards when the player touches it to tally scores and gradually increase difficulty. The area slowly gets further each time to make getting more points more and more difficult, but the player also gains speed as the game goes on to keep it feeling fast paced and avoid a soft lock. 
