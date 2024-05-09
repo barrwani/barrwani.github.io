@@ -2,7 +2,7 @@
 layout: page
 title: About
 permalink: /about/
-weight: 4
+weight: 3
 ---
 
 # **NYC-based Gameplay Programmer & CS Student**
