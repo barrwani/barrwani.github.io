@@ -7,7 +7,7 @@ weight: 4
 
 # **NYC-based Gameplay Programmer & CS Student**
 
-<img style="float: left;" src="_files/barwani.png">
+<img style="float: left;" src="/assets/barwani.png">
 
 I am a Gameplay Programmer and a student at NYU's College of Arts and Sciences for a B.A in Computer Science and Linguistics. 
 
