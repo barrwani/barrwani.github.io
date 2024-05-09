@@ -11,7 +11,7 @@ weight: 4
 
 I am a Gameplay Programmer and a student at NYU's College of Arts and Sciences for a B.A in Computer Science and Linguistics. 
 
-In 2019 I co-founded an indie game development studio called Nahar Studios: [nahar.dev](https://nahar.dev/). My main role at the studio is that of the main developer and one of the game/level designers, and I used to be on project management alongside that. We initially started out with simple jam games, but built up towards a large scale mobile release which took us around 6 months to finish.
+In 2019 I co-founded an indie game development studio called Nahar Studios: [nahar.dev](https://nahar.dev/). My main role at the studio is that of the main developer and one of the game/level designers, and I used to be on project management alongside that. We initially started out with simple jam games, but built up towards a larger scale mobile game which took us around 6 months to release.
 
 
  I am also a lab member of NYU's [OSIRIS Offensive Cybersecurity Lab](https://osiris.cyber.nyu.edu/), where I take part in CTF challenge solving and writing as a way to hone my programming skills. 
