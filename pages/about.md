@@ -9,7 +9,7 @@ weight: 3
 
 <img style="float: left; padding-right:20px" src="/assets/barwani.webp">
 
-I am a Gameplay Programmer and a student at NYU's College of Arts and Sciences for a B.A in Computer Science and Linguistics. 
+I am a Gameplay Programmer and a student at NYU's College of Arts and Sciences working towards a B.A in Computer Science and Linguistics. 
 
 In 2019 I co-founded an indie game development studio called Nahar Studios: [nahar.dev](https://nahar.dev/). I mainly work as a gameplay programmer and game/level designer, communicating with artists, writers, and designers on design, cohesion, and asset integration, though most of my work revolves around developing gameplay features (Enemy AI, Player mechanics, workflow systems, etc.) 
 
