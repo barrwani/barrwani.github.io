@@ -2,9 +2,9 @@
 title               : Asaad Al Barwani
 description         : >-
                       Computer Science Student
-                      at NYU and aspiring Game Programmer.
-baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
-repository          : barrwani/barrwani.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
+                      at NYU. Gameplay Programmer.
+baseurl             : ""                     
+repository          : barrwani/barrwani.github.io     
 remote_theme        : YoussefRaafatNasry/portfolYOU
 open_new_tab        : false                             # Opens external URLs in new tab (works for posts, projects and navbar only)
 
@@ -25,16 +25,16 @@ nav_exclude:                                            # The following paths ar
 author:
   name              : Asaad Al Barwani
   image             : https://i.imgur.com/uyDNQnn.jpg
-#  behance           : your_username
+# behance           : your_username
 # dribbble          : your_username
   email             : asaad[dot]barwani[at]gmail[dot]com
-#  facebook          : your_username
+# facebook          : your_username
   github            : barrwani
 # gitlab            : your_username
 # instagram         : your_username
 # kaggle            : your_username
   linkedin          : barwani
-#  medium            : your_username
+# medium            : your_username
 # soundcloud        : your_username
 # spotify           : your_username
 # stackoverflow     : your_user_id
