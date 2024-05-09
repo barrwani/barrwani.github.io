@@ -23,10 +23,10 @@ nav_exclude:                                            # The following paths ar
 ### Author Info ###
 author:
   name              : Asaad Al Barwani
-  image             : https://i.imgur.com/uyDNQnn.jpg
+  image             : _files/barwani.png
 # behance           : your_username
 # dribbble          : your_username
-  email             : asaad[dot]barwani[at]gmail[dot]com
+  email             : asaad.barwani@gmail.com
 # facebook          : your_username
   github            : barrwani
 # gitlab            : your_username
