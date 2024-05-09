@@ -39,12 +39,6 @@
 
       {% for html_page in filtered_pages %}  
 
-        {%- if page.url contains html_page.url -%}
-          {%- assign active_status = "active" -%}
-        {%- else -%}
-          {%- assign active_status = "" -%}
-        {%- endif -%}
-
         {%- if html_page.external_url -%}
           {%- assign url = html_page.external_url -%}
         {%- else -%}
