@@ -13,7 +13,9 @@ In Kalindis, you play as a cheerful jellyfish trying to escape the sea floor! Yo
 <video src="/assets/Kalindis Gameplay.mp4" width="640" height="360" controls></video>
 </center>
 
-Platform: Android | Engine: Godot | Duration: 6 months | Team Size: 8 | Roles: Game Programming, Game Design, Project Management
+Platform | Engine | Duration | Team Size| Roles
+--------  | --------  | --------  | --------  |-------- |
+Android | Godot | 6 months | 8 People | Game Programming, Game Design, Project Management
 
 <center>
 <video src="/assets/kalindismvmtprototype.mp4" width="640" height="360" controls></video>
