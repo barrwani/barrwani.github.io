@@ -9,15 +9,13 @@ weight: 3
 
 <img style="float: left; padding-right:20px" src="/assets/barwani.webp">
 
-I am a Gameplay Programmer and a student at NYU's College of Arts and Sciences for a B.A in Computer Science and Linguistics.
+I am a Gameplay Programmer and a student at NYU's College of Arts and Sciences for a B.A in Computer Science and Linguistics. 
 
 In 2019 I co-founded an indie game development studio called Nahar Studios: [nahar.dev](https://nahar.dev/). I mainly work as a gameplay programmer and game/level designer, communicating with artists, writers, and designers on design, cohesion, and asset integration, though most of my work revolves around developing gameplay features (Enemy AI, Player mechanics, workflow systems, etc.) 
 
-I am also a lab member of NYU's [OSIRIS Offensive Cybersecurity Lab](https://osiris.cyber.nyu.edu/), where I take part in CTF challenge solving and writing as a way to hone my programming skills. 
+I am also a lab member of NYU's [OSIRIS Offensive Cybersecurity Lab](https://osiris.cyber.nyu.edu/), where I take part in CTF challenge solving and writing as a way to hone my programming skills. I mainly focus on crypto challenges and my writeups for those are available on my blog. 
 
-
-For my itch.io: [barwani.itch.io](https://barwani.itch.io)
-
+I'm also a big Godot enthusiast and a Destiny nerd, but aside from games I play bass guitar, practice Kendo (Japanese fencing), and do some occasional photography.
 
 ## Skills
 
