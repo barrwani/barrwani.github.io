@@ -5,17 +5,16 @@ permalink: /about/
 weight: 3
 ---
 
-# **About Me**
+# **NYC-based Gameplay Programmer & CS Student**
 
-My name is **{{ site.author.name }}**. 
 
-I am a student and aspiring Gameplay Programmer currently at NYU's College of Arts and Sciences for a B.A in Computer Science and Linguistics. 
+I am a Gameplay Programmer and a student at NYU's College of Arts and Sciences for a B.A in Computer Science and Linguistics. 
 
-In 2019 I co-founded an indie game development studio called Nahar Studios: [nahar.dev](https://nahar.dev/). 
+In 2019 I co-founded an indie game development studio called Nahar Studios: [nahar.dev](https://nahar.dev/). I am also a lab member of NYU's [OSIRIS Offensive Cybersecurity Lab](https://osiris.cyber.nyu.edu/).
+
 
 For my itch.io: [barwani.itch.io](https://barwani.itch.io)
 
-I am a lab member of NYU's [OSIRIS Offensive Cybersecurity Lab](https://osiris.cyber.nyu.edu/).
 
 ## Skills
 
@@ -23,7 +22,7 @@ I am a lab member of NYU's [OSIRIS Offensive Cybersecurity Lab](https://osiris.c
 
 **Tools:** Unreal Engine, Godot Engine, Git/GitHub, Docker, Singularity, RHEL (Rocky)
 
-**Skills:** Finite State Machines (FSM), Linear Algebra, Asset Integration, AI Programming, HPC, CTF
+**Skills:** Linear Algebra, Finite State Machines (FSM), Asset Integration, AI Programming, HPC, CTF
 
 **Relevant Coursework:** Honors Linear Algebra, Computer Graphics,
    Data Structures and Algorithms, OOP in C++, Mechanics, Computer Systems Organisation, 
