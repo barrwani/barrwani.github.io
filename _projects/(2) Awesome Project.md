@@ -1,7 +1,7 @@
 ---
 name: Kalindis
 tools: [Godot, Git]
-image: /assets/InstaEscape.png/
+image: /assets/InstaEscape.png
 description: Nahar's first large-scale project, taking 6 months and 10 collaborating members to complete. 
 ---
 
