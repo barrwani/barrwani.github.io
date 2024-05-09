@@ -27,13 +27,13 @@ In Kalindis, you play as a cheerful jellyfish trying to escape the sea floor! Yo
 
 - Designed and implemented a gradual difficulty scaling system 
 
-- Implemented Finite State Machine (FSM) to handle player animations, SFX, and environment interaction logic
+- Implemented Finite State Machine (FSM) to handle player animations, VFX/SFX, and environment interaction logic
 
 - Integrated assets from artists, sound engineers, and UI designers 
 
 - Implemented fully functional leaderboard system
 
-- Polished gamefeel by implementing screenshake, particle effects, and responsive controls
+- Polished game feel by implementing screenshake, particle effects, and responsive controls
 
 
 ## Features
@@ -41,10 +41,10 @@ In Kalindis, you play as a cheerful jellyfish trying to escape the sea floor! Yo
 The main mechanic of the game was a sort of cross between Doodle Jump and Angry Birds. You would pull back a virtual joystick in the same way you'd pull back the Angry Birds slingshot, then on release you'd jump as if you released that slingshot and were launched in the opposite direction. The catch here was you could only jump once, and you'd need to renew your jump by picking up a star. 
 
 
-Below is an earlier version of the system:
+Below is a demonstration from the prototyping stages:
 
 <center>
-<video src="/assets/kalindismvmtprototype.mp4" width="640" height="360" controls></video>
+<img src="/assets/mvmtprototype.gif" width="640" height="360"></img>
 </center>
 
 Calculating the direction to go in and applying that direction to the players velocity vectors was simple enough:
@@ -95,7 +95,7 @@ The obstacles themselves were quite simple, with the sticky wall just halting th
 What was most difficult to program was actually the item/obstacle spawner. Since the game was an infinite scroller I had to make it get more difficult somehow, so making sure that the difficult curve was reasonable and rewarding was important. 
 
 <center>
-<video src="/assets/kalindisarea.mp4" width="640" height="360" controls></video>
+<img src="/assets/threshold.gif" width="640" height="360"></img>
 </center>
 
 I used a collision area which constantly moves upwards when the player touches it to tally scores and gradually increase difficulty. The area slowly gets further each time to make getting more points more and more difficult, but the player also gains speed as the game goes on to keep it feeling fast paced and avoid a soft lock. 
@@ -117,7 +117,7 @@ Here, everytime you gain a point you tally up some counters and call the environ
 ```swift
 func spawner():
 	var rand = RandomNumberGenerator.new()
-	#starspawn
+	//starspawn
 	for i in range(3):
 		scales -= 350
 		if threshcounter % 10 == 0 and threshcounter != 0:
@@ -129,7 +129,7 @@ func spawner():
 		var y =  scales
 		spawnstar.position.y = y
 		call_deferred("add_child", spawnstar)
-	#moonspawn
+	//moonspawn
 	if stickyrate == 2:
 		var spawnmoon = moon.instance()
 		rand.randomize()
@@ -140,7 +140,7 @@ func spawner():
 		call_deferred("add_child",spawnmoon)
 
 	if stickyrate % 2 == 0:
-	#stickywallspawn
+	//stickywallspawn
 		var stickywallspawn = stickywall.instance()
 		var wx = wallpos[randi() % wallpos.size()]
 		stickywallspawn.position.x = wx
@@ -148,7 +148,7 @@ func spawner():
 		stickywallspawn.position.y = wy
 		call_deferred("add_child",stickywallspawn)
 
-	#movingplatspawn
+	//movingplatspawn
 	if (stickyrate % 2 != 0 && threshcounter >= 4) :
 		var movingplatspawn = movingplat.instance()
 		movingplatspawn.position.x = -200
