@@ -1,17 +1,19 @@
-- title: Student, Harvard CS
-  from: 2014
-  to: 2018
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+- title: Student, NYU B.A Computer Science & Linguistics
+  from: 2022
+  to: 2026
+  description: "Relevant Coursework: Honors Linear Algebra, Computer Graphics,
+   Data Structures and Algorithms, OOP in C++, Mechanics, Computer Systems Organisation, 
+   Operating Systems."
 
-- title: Software Engineer, Google, UK
-  from: 2018
+- title: Developer, Nahar Studios
+  from: 2019
   to: present
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  description: "Handling gameplay programming utilising the Godot Engine, involving:
+
+- Finite State Machine (FSM) systems for player characters and Non-Player Character (NPC) AI with associated logic
+- Asset Integration (Animations and VFX, SFX, Adapting Music, UI/UX integration)
+- Gameplay Mechanics (Movement, Attacks, Physics interactions, etc.)
+- Game/Level Design for 2D Platformers/Puzzle Platformers, Top-Down games, and Endless Scrollers
+- Working with Designers, Writers, and Artists to coordinate game feel, UX, and asset management, standardisation and integration
+- Working with two other developers, coordinating and assigning tasks for each member
+- Version Control with Git/GitHub using Git Flow Branch Strategy"
