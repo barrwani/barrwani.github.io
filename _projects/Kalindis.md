@@ -9,22 +9,28 @@ description: Nahar's first large-scale project, taking 6 months and 10 collabora
 
 In Kalindis, you play as a cheerful jellyfish trying to escape the sea floor! You only have access to one jump which replenishes once you collect a STAR. Collecting MOONS will freeze the floor in place for you! Jumping into a STICKY WALL gives you some breathing room, letting you reangle and time your next jump! Hitting a BARREL will replenish your jump but knock you back down! Climb as high as possible!
 
-<video src="/assets/Kalindis Gameplay Preview.mp4" width="338" height="720" controls></video>
+<video src="/assets/Kalindis Gameplay Preview.mp4" width="640" height="360" controls></video>
 
 Platform: Android | Engine: Godot | Duration: 6 months | Team Size: 8 | Roles: Game Programming, Game Design, Project Management
 
 
-<video src="/assets/kalindismvmtprototype.mp4" width="1280" height="720" controls></video>
+<video src="/assets/kalindismvmtprototype.mp4" width="640" height="360" controls></video>
 
 
 ## Responsibilities 
 
 - Designed, prototyped, and implemented player movement/basic mechanics (death, jumping, collecting stars and moons), environment interactions (sticky walls), obstacles (barrels, death walls), and UI
+
 - Calculated and displayed player trajectory with projectile motion calculations
+
 - Designed and implemented a gradual difficulty scaling system 
+
 - Implemented Finite State Machine (FSM) to handle player animations, SFX, and environment interaction logic
+
 - Integrated assets from artists, sound engineers, and UI designers 
+
 - Implemented fully functional leaderboard system
+
 - Polished gamefeel by implementing screenshake, particle effects, and responsive controls
 
 ## What I learned
