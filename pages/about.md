@@ -7,9 +7,9 @@ weight: 4
 
 # **NYC-based Gameplay Programmer & CS Student**
 
-<img style="float: left;" src="/assets/barwani.webp">
+<img style="float: left; padding-right:20px" src="/assets/barwani.webp">
 
-I am a Gameplay Programmer and a student at NYU's College of Arts and Sciences for a B.A in Computer Science and Linguistics. 
+I am a Gameplay Programmer and a student at NYU's College of Arts and Sciences for a B.A in Computer Science and Linguistics. I started out programming with PyGame on a 1st edition Raspberry Pi, and from there built my knowledge through Godot and 
 
 In 2019 I co-founded an indie game development studio called Nahar Studios: [nahar.dev](https://nahar.dev/). My main role at the studio is that of the main developer and one of the game/level designers, and I used to be on project management alongside that. We initially started out with simple jam games, but built up towards a larger scale mobile game which took us around 6 months to release.
 
