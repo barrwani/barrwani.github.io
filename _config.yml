@@ -47,14 +47,14 @@ author:
 
 
 ### Posts ###
-permalink: /blog/:title
+permalink: /b/:title
 
 
 ### Collections ###
 collections:
   projects:
     output: true
-    permalink: /projects/:name
+    permalink: /p/:name
 
 
 
