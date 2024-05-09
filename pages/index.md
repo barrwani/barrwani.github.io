@@ -2,7 +2,7 @@
 layout: default
 title: Projects
 permalink: /
-weight: 1
+weight: 2
 remote_projects: 
 ---
 
