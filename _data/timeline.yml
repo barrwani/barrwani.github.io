@@ -8,12 +8,12 @@
 - title: Developer, Nahar Studios
   from: 2019
   to: present
-  description: "Handling gameplay programming utilising the Godot Engine, involving:
-
-- Finite State Machine (FSM) systems for player characters and Non-Player Character (NPC) AI with associated logic
-- Asset Integration (Animations and VFX, SFX, Adapting Music, UI/UX integration)
-- Gameplay Mechanics (Movement, Attacks, Physics interactions, etc.)
-- Game/Level Design for 2D Platformers/Puzzle Platformers, Top-Down games, and Endless Scrollers
-- Working with Designers, Writers, and Artists to coordinate game feel, UX, and asset management, standardisation and integration
-- Working with two other developers, coordinating and assigning tasks for each member
+  description: "Handling gameplay programming utilising the Godot Engine, involving:\
+\
+- Finite State Machine (FSM) systems for player characters and Non-Player Character (NPC) AI with associated logic\
+- Asset Integration (Animations and VFX, SFX, Adapting Music, UI/UX integration)\
+- Gameplay Mechanics (Movement, Attacks, Physics interactions, etc.)\
+- Game/Level Design for 2D Platformers/Puzzle Platformers, Top-Down games, and Endless Scrollers\
+- Working with Designers, Writers, and Artists to coordinate game feel, UX, and asset management, standardisation and integration\
+- Working with two other developers, coordinating and assigning tasks for each member\
 - Version Control with Git/GitHub using Git Flow Branch Strategy"
