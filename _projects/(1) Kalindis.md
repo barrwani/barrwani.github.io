@@ -77,6 +77,7 @@ func _on_joystickbutton_released():
 	holding = false
 	line.hide()
 ```
+
 </details>
 
 
@@ -95,6 +96,7 @@ func update_trajectory(delta):
 		vel.y += 800 * delta 
 		pos += vel * delta
 ```
+
 </details>
 
 The obstacles themselves were quite simple, with the sticky wall just halting the `apply_gravity()` method of the player when the player stuck to it and killed any momentum built while giving back the players jump. Once the player jumped off the wall it re-initiated gravity as normal. The moon just paused the wave that was constantly moving up at a steadily increasing rate, and the barrel moved back and forth using a Tween, giving the player back a jump if collision occured so they could recover or use it to their advantage if they hit it right.
@@ -124,6 +126,7 @@ func _on_DuplicateThresh_body_entered(body):
 		$RWall/backbar3.position.y -= 300
 		$CollisionShape2D.position.y -= 300
 ```
+
 </details>
 
 
@@ -178,6 +181,7 @@ func spawner():
 	if stickyrate == 4:
 		stickyrate = 0
 ```
+
 </details>
 
 
