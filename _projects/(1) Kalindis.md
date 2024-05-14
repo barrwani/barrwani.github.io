@@ -47,9 +47,9 @@ Below is a demonstration from the prototyping stages:
 <img src="/assets/mvmtprototype.gif" width="640" height="360">
 </center>
 
-
+Calculating the direction to go in and applying that direction to the players velocity vectors was simple enough:
 <details>
-<summary> Calculating the direction to go in and applying that direction to the players velocity vectors was simple enough. </summary>
+<summary> Code Snippet </summary>
 <br>
 
 ```swift
@@ -80,9 +80,9 @@ func _on_joystickbutton_released():
 
 </details>
 
-
+It was similarly simple to set up the trajectory:
 <details>
-<summary> It was similarly simple to set up the trajectory. </summary>
+<summary> Code Snippet  </summary>
 <br>
 
 ```swift
