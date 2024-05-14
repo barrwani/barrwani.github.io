@@ -48,9 +48,6 @@ Below is a demonstration from the prototyping stages:
 </center>
 
 Calculating the direction to go in and applying that direction to the players velocity vectors was simple enough:
-<details>
-<summary> Code Snippet </summary>
-<br>
 
 ```swift
 func _on_joystickbutton_released():
@@ -78,12 +75,6 @@ func _on_joystickbutton_released():
 	line.hide()
 ```
 
-</details>
-
-It was similarly simple to set up the trajectory:
-<details>
-<summary> Code Snippet  </summary>
-<br>
 
 ```swift
 func update_trajectory(delta):
@@ -97,7 +88,6 @@ func update_trajectory(delta):
 		pos += vel * delta
 ```
 
-</details>
 
 The obstacles themselves were quite simple, with the sticky wall just halting the `apply_gravity()` method of the player when the player stuck to it and killed any momentum built while giving back the players jump. Once the player jumped off the wall it re-initiated gravity as normal. The moon just paused the wave that was constantly moving up at a steadily increasing rate, and the barrel moved back and forth using a Tween, giving the player back a jump if collision occured so they could recover or use it to their advantage if they hit it right.
 
@@ -110,12 +100,8 @@ What was most difficult to program was actually the item/obstacle spawner. Since
 
 I used a collision area which constantly moves upwards when the player touches it to tally scores and gradually increase difficulty. The area slowly gets further each time to make getting more points more and more difficult, but the player also gains speed as the game goes on to keep it feeling fast paced and avoid a soft lock. 
 
-<details>
-<summary> Code Snippet </summary>
-<br>
 
-<figure class ="highlight">
-<code class = "language-godot" data-lang="godot">
+```godot
 func _on_DuplicateThresh_body_entered(body):
 	if body.is_in_group("player"):
 		stickyrate +=1
@@ -126,17 +112,12 @@ func _on_DuplicateThresh_body_entered(body):
 		$LWall/backbar2.position.y -= 300
 		$RWall/backbar3.position.y -= 300
 		$CollisionShape2D.position.y -= 300
-</code>
-</figure>
-</details>
+```
 
 
 Here, everytime you gain a point you tally up some counters and call the environment spawner. Since the player dies when it touches the edges of the screen (walls), I also had to move them up constantly with the player.
 
 
-<details>
-<summary> Code Snippet </summary>
-<br>
 
 ```swift
 func spawner():
@@ -183,7 +164,7 @@ func spawner():
 		stickyrate = 0
 ```
 
-</details>
+
 
 
 The spawner's code is a bit long but its really just spawning all the different objects at different rates, so we don't get a bunch of sticky coral walls and barrels after every point. Every item has its own spawn boundaries with a slight element of random so it doesn't feel repetitive. The only thing I regret not implementing here is not increasing spawn rate of obstacles past a certain point to increase difficulty in really late stages. 
