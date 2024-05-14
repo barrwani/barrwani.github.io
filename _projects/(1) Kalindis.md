@@ -101,7 +101,7 @@ What was most difficult to program was actually the item/obstacle spawner. Since
 I used a collision area which constantly moves upwards when the player touches it to tally scores and gradually increase difficulty. The area slowly gets further each time to make getting more points more and more difficult, but the player also gains speed as the game goes on to keep it feeling fast paced and avoid a soft lock. 
 
 
-```godot
+```swift
 func _on_DuplicateThresh_body_entered(body):
 	if body.is_in_group("player"):
 		stickyrate +=1
