@@ -114,7 +114,8 @@ I used a collision area which constantly moves upwards when the player touches i
 <summary> Code Snippet </summary>
 <br>
 
-```swift
+<figure class ="highlight">
+<code class = "language-godot" data-lang="godot">
 func _on_DuplicateThresh_body_entered(body):
 	if body.is_in_group("player"):
 		stickyrate +=1
@@ -125,8 +126,8 @@ func _on_DuplicateThresh_body_entered(body):
 		$LWall/backbar2.position.y -= 300
 		$RWall/backbar3.position.y -= 300
 		$CollisionShape2D.position.y -= 300
-```
-
+</code>
+</figure>
 </details>
 
 
