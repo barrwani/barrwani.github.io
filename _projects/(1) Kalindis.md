@@ -2,7 +2,7 @@
 name: Kalindis
 tools: [Godot, Git]
 image: /assets/InstaEscape.png
-description: Nahar's first large-scale project, taking 6 months and 8 collaborating members to complete. 
+description: An infinite-scroller mobile game starring a little blue jellyfish escaping the rising depths.
 ---
 
 # Kalindis
