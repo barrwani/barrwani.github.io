@@ -2,7 +2,7 @@
 name: Kalindis
 tools: [Godot, Git]
 image: /assets/InstaEscape.png
-description: An infinite-scroller mobile game starring a little blue jellyfish escaping the rising depths.
+description: An infinite-scroller mobile game starring a little blue jellyfish escaping the rising depths. Released on the Google Play Store. 
 ---
 
 # Kalindis
