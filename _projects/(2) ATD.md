@@ -2,7 +2,7 @@
 name: A Troubled Double
 tools: [Godot]
 image: /assets/troubleddouble.png
-description: "A zany 'Crash Bandicoot: Twinsanity' inspired 2D puzzle platformer"
+description: A zany "Crash Bandicoot: Twinsanity" inspired 2D puzzle platformer developed in Godot. Originally a jam submission.
 ---
 
 
@@ -16,7 +16,7 @@ Originally a game jam submission, A Troubled Double is a Crash Bandicoot: Twinsa
 
 | Platform | Engine | Duration | Team Size | Roles |
 | --------  | --------  | --------  | --------  | -------- |
-| Web/Windows | Godot | 1 month (initially), Ongoing (backburner) | 4 People | Game Programming & Design, Project Management |
+| Web/Windows | Godot | 1 month (jam), Ongoing (backburner project) | 4 People | Game Programming & Design, Project Management |
 
 
 ## Responsibilities
