@@ -2,7 +2,7 @@
 name: A Troubled Double
 tools: [Godot]
 image: /assets/troubleddouble.png
-description: "Originally a game jam submission, A Troubled Double is a Crash Bandicoot: Twinsanity inspired puzzle platformer that puts you in control of a wanted delinquent and her partner-in-mischief brother. Throw your brother around the level to get rid of police drones and clear a path to escape."
+description: "A zany 'Crash Bandicoot: Twinsanity' inspired 2D puzzle platformer"
 ---
 
 
@@ -11,7 +11,7 @@ description: "Originally a game jam submission, A Troubled Double is a Crash Ban
 Originally a game jam submission, A Troubled Double is a Crash Bandicoot: Twinsanity inspired puzzle platformer that puts you in control of a wanted delinquent and her partner-in-mischief brother. Throw your brother around the level to get rid of police drones with his trusty slingshot and push buttons to move parts of the level around, granting you both a path of escape. The catch? You can't leave him behind. 
 
 <center>
-<video src="/assets/Kalindis Gameplay.mp4" width="640" height="360" controls></video>
+<img src="/assets/atd.gif" width="640" height="360">
 </center>
 
 | Platform | Engine | Duration | Team Size | Roles |
