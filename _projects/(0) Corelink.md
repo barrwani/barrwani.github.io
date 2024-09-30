@@ -1,9 +1,8 @@
 ---
 name: Corelink
-tools: [C++, Unreal Engine, Godot Engine]
+tools: [C++, Unreal, Godot]
 image: /assets/corelink.png
-description: Corelink is a real time low latency network framework that facilitates connecting users, data, and applications with computational resources. Corelink software is open source and licensed under the MIT license.
-"
+description: Corelink is a real time low latency network framework that facilitates connecting users, data, and applications with computational resources."
 ---
 
 
