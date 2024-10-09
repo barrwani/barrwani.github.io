@@ -26,7 +26,7 @@ For more information, click [here](https://corelink.hsrn.nyu.edu/)
 
 - Working to improve and implement functionality, as well as rewrite existing documentation/writing new documentation
 
-- Improving TCP/IP support and memory management for Unreal Engine 5 C++
+- Workign on integrating Corelink API into Unreal Engine 5
 
 - Heading a prospective Godot Engine Corelink Client/Plugin, leading preliminary research and development.
 
