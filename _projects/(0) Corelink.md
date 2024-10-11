@@ -26,8 +26,17 @@ For more information, click [here](https://corelink.hsrn.nyu.edu/)
 
 - Working to improve and implement functionality, as well as rewrite existing documentation/writing new documentation
 
-- Workign on integrating Corelink API into Unreal Engine 5
+- Working on integrating the Corelink API into Unreal Engine 5
 
 - Heading a prospective Godot Engine Corelink Client/Plugin, leading preliminary research and development.
 
 - Collaborating with researchers and students and implementing desired changes, fixes, and functionality, as well as assisting API usage.
+
+
+## Tasks
+
+- Completely rewrote outdated documentation to represent most recent version of Corelink (DONE)
+
+- Integrating Corelink API into UE5 (In Progress)
+
+- Drafting plans for Godot Engine Client/Plugin (In Progress)
