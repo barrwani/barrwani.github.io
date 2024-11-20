@@ -2,7 +2,7 @@
 name: Corelink
 tools: [C++, Unreal, Godot]
 image: /assets/corelink.png
-description: Corelink is a real time low latency network framework that facilitates connecting users, data, and applications with computational resources."
+description: Corelink is a real time low latency network framework that facilitates connecting users, data, and applications with computational resources.
 ---
 
 
