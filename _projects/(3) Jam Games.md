@@ -1,7 +1,7 @@
 ---
 name: Jam Games
 tools: [Godot, GameMaker]
-image: /assets/troubleddouble.png
+image: /assets/naharpas.png
 description: "Summation of all Jam Games I have worked on"
 ---
 
@@ -14,7 +14,7 @@ A time-based arcade-puzzle game where you place bridges that move bright-colored
 Made for GUMBO's community jam, placing 3rd overall and 1st in fun and sound categories.
 
 <center>
-<img src="/assets/atd.gif" width="640" height="360">
+<img src="/assets/block.gif" width="640" height="360">
 </center>
 
 | Platform | Engine | Duration | Team Size | Roles |
@@ -39,7 +39,7 @@ A race-against-time platformer where you play as a caterpillar that has to adapt
 A submission to the third GoGodot jam.
 
 <center>
-<img src="/assets/atd.gif" width="640" height="360">
+<img src="/assets/catpanic.png" width="640" height="360">
 </center>
 
 | Platform | Engine | Duration | Team Size | Roles |
@@ -67,7 +67,7 @@ An Action Platformer where you must counter the elements of your enemies. Mix di
 A submission to the 5th Brackey's jam.
 
 <center>
-<img src="/assets/atd.gif" width="640" height="360">
+<img src="/assets/nvalchemy.png" width="640" height="360">
 </center>
 
 | Platform | Engine | Duration | Team Size | Roles |
@@ -95,7 +95,7 @@ A platformer where your moves are limited. Once you release a key on your keyboa
 A submission to GameMakers Toolkit (GMTK) 2020 jam. Placed 434th out of 5260 entries. (top 8%)
 
 <center>
-<img src="/assets/atd.gif" width="640" height="360">
+<img src="/assets/rebind.png" width="640" height="360">
 </center>
 
 | Platform | Engine | Duration | Team Size | Roles |
@@ -122,7 +122,7 @@ A top-down adventure game where you play as a character that wields sparks. Thes
 A submission to Ludum Dare 46.
 
 <center>
-<img src="/assets/atd.gif" width="640" height="360">
+<img src="/assets/spol.png" width="640" height="360">
 </center>
 
 | Platform | Engine | Duration | Team Size | Roles |
@@ -150,7 +150,7 @@ A puzzle platformer which involves blowing yourself up to break down walls and k
 My first ever game jam game, made in Godot in 1 week for a community jam. Came 19th out of 106 entries.
 
 <center>
-<img src="/assets/atd.gif" width="640" height="360">
+<img src="/assets/negcon.png" width="640" height="360">
 </center>
 
 | Platform | Engine | Duration | Team Size | Roles |
