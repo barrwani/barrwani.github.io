@@ -5,6 +5,29 @@ image: /assets/troubleddouble.png
 description: "Summation of all Jam Games I have worked on"
 ---
 
+# Gamemaker
+
+## Bridgelock
+
+A time-based arcade-puzzle game where you place bridges that move bright-colored cubes around. Your goal is to get the cubes to the island block that matches their color.
+
+Made for GUMBO's community jam, placing 3rd overall and 1st in fun and sound categories.
+
+<center>
+<img src="/assets/atd.gif" width="640" height="360">
+</center>
+
+| Platform | Engine | Duration | Team Size | Roles |
+| --------  | --------  | --------  | --------  | -------- |
+| Web/Windows | Gamemaker | 2 days | 3 People | Game Programming, Game Design, Visuals|
+
+
+### Responsibilities
+
+- Designed, prototyped, and implemented core block movement mechanic, ramping difficulty curve, countdown timer, and loss mechanic
+
+- Drew and integrated all sprites
+  
 
 # Godot Projects
 
