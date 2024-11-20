@@ -5,9 +5,13 @@ image: /assets/naharpas.png
 description: "Summation of all Jam Games I have worked on"
 ---
 
-# Gamemaker
+# Jam Games
 
-## Bridgelock
+All jam games I have worked on. View work in more detail at my [itch.io](https://barwani.itch.io/)
+
+## Gamemaker
+
+### Bridgelock
 
 A time-based arcade-puzzle game where you place bridges that move bright-colored cubes around. Your goal is to get the cubes to the island block that matches their color.
 
@@ -29,11 +33,11 @@ Made for GUMBO's community jam, placing 3rd overall and 1st in fun and sound cat
 - Drew and integrated all sprites
   
 
-# Godot Projects
+## Godot Projects
 
 Below is a collection of all jam games I have worked on in Godot.
 
-## Caterpanic!
+### Caterpanic!
 A race-against-time platformer where you play as a caterpillar that has to adapt to it's environment. Evolve into a butterfly or devolve into a fish to make it through the levels.
 
 A submission to the third GoGodot jam.
@@ -60,7 +64,7 @@ A submission to the third GoGodot jam.
 - Integrated art, UI, and sound assets
 
 
-## Novel Alchemy
+### Novel Alchemy
 
 An Action Platformer where you must counter the elements of your enemies. Mix different chemicals to produce different elements.
 
@@ -89,7 +93,7 @@ A submission to the 5th Brackey's jam.
 
 - Integrated art, UI, and sound assets
 
-## Rebind
+### Rebind
 A platformer where your moves are limited. Once you release a key on your keyboard, you can no longer use it.
 
 A submission to GameMakers Toolkit (GMTK) 2020 jam. Placed 434th out of 5260 entries. (top 8%)
@@ -115,7 +119,7 @@ A submission to GameMakers Toolkit (GMTK) 2020 jam. Placed 434th out of 5260 ent
 
 - Integrated art, UI, and sound assets
 
-## Sparks of Light
+### Sparks of Light
 
 A top-down adventure game where you play as a character that wields sparks. These sparks can protect the player and damage enemies, but once they take damage they disappear. 
 
@@ -143,7 +147,7 @@ A submission to Ludum Dare 46.
 - Integrated art, UI, and sound assets
 
 
-## Negative Construction
+### Negative Construction
 
 A puzzle platformer which involves blowing yourself up to break down walls and kill enemies.
 
