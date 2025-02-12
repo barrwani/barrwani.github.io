@@ -40,3 +40,14 @@ For more information, click [here](https://corelink.hsrn.nyu.edu/)
 - Integrating Corelink API into UE5 (In Progress)
 
 - Drafting plans for Godot Engine Client/Plugin (In Progress)
+
+
+### Integrating Corelink API into UE5
+
+Steps:
+- Rewrite classes to be structured in an Unreal-compliant manner (Data structures, namespaces, etc...)
+- Adjust Corelink logic to accomodate for UEC++ Garbage Collection quirks
+- Set up build files to compile Corelink API on runtime as DLL
+- Document changes and draft usage documentation
+- Develop a small example game using Corelink within UE5
+- Publish to UE marketplace
