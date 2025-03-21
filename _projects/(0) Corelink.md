@@ -45,13 +45,19 @@ For more information, click [here](https://corelink.hsrn.nyu.edu/)
 ### Integrating Corelink API into UE5
 
 Tasks:
+
 Phase 1:
+
 - Rewrite classes to be structured in an Unreal-compliant manner (STL Smart Pointers/Memory -> Unreal Smart Pointers/Memory, base class inheritance changes)
 - Set up build files to compile Corelink API on runtime as DLL
+ 
 Phase 2:
+
 - Replace Unreal Engine netcode with Corelink for plug-and-play usage 
 - Expose Corelink API to Blueprint for any required basic logic modifications
+
 Phase 3:
+
 - Document changes and draft usage documentation
 - Develop a small example game using Corelink within UE5
 - Publish plugin to UE marketplace
