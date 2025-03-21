@@ -44,8 +44,6 @@ For more information, click [here](https://corelink.hsrn.nyu.edu/)
 
 ### Integrating Corelink API into UE5
 
-Tasks:
-
 Phase 1:
 
 - Rewrite classes to be structured in an Unreal-compliant manner (STL Smart Pointers/Memory -> Unreal Smart Pointers/Memory, base class inheritance changes)
