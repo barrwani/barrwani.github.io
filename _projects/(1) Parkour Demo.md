@@ -86,6 +86,10 @@ void AMovementCharacter::UpdateSlide(const float DeltaTime)
 
 ### Wall-stuff
 
+<center>
+<img src="/assets/walljumptests.gif" width="640" height="360">
+</center>
+
 #### Wall Jump
 
 Launches the character in the direction they are facing relative to the wall. 
