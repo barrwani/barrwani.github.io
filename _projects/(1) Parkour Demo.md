@@ -14,7 +14,7 @@ description: A simple C++ movement demo made for a scrapped project.
  For example, wall jumping while facing the ground gives a burst of movement towards the ground, and wall jumping (which occurs at a set angle) will rotate the camera towards the players jump direction automatically. 
  
 <center>
-<video src="/assets/MOVEMENT.mp4" width="1280" height="720" controls></video>
+<video src="/assets/MOVEMENT.mp4" width="640" height="360" controls></video>
 </center>
 
 | Platform | Engine | Duration | Team Size | Roles |
@@ -93,7 +93,7 @@ Launches the character in the direction they are facing relative to the wall.
 Takes into account whether the player is facing downwards or not to test for a downwards jump, and whether or not the player is facing forwards or backwards relative to the wall so they always jump in the desired direction.
 
 
-````cpp
+```cpp
 void AShacknewsCharacter::WallJump()
 {
 	FRotator CameraRotation = GetController()->GetControlRotation();
