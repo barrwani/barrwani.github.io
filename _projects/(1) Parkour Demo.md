@@ -17,11 +17,6 @@ description: A simple C++ movement demo made for a scrapped project.
 <video src="/assets/MOVEMENT.mp4" width="640" height="360" controls></video>
 </center>
 
-| Platform | Engine   | Roles |
-| --------  | --------  | -------- |
-| N/A | Unreal Engine   | Game Programming & Design|
-
-
 
 ## Responsibilities 
 
