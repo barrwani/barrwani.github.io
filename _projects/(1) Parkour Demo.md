@@ -14,6 +14,7 @@ description: A simple C++ movement demo made for a scrapped project.
  For example, wall jumping while facing the ground gives a burst of movement towards the ground, and wall jumping (which occurs at a set angle) will rotate the camera towards the players jump direction automatically. 
  
 <center>
+<video src="/assets/MOVEMENT.mp4" width="1280" height="720" controls></video>
 </center>
 
 | Platform | Engine | Duration | Team Size | Roles |
