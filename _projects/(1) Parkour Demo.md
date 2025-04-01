@@ -7,7 +7,7 @@ description: A simple C++ movement demo made for a scrapped project.
 
 # Parkour Demo
 
- A simple C++ movement demo made for a scrapped project. The player can sprint, slide, cling to walls, and wall jump. The goal of the demo was to demonstrate fast paced, high-speed movement gameplay while still being readable and easy to control for a player.
+ A simple C++ movement demo made for a scrapped project. The player can sprint, slide, cling to walls, and wall jump. The goal of the demo was to demonstrate fast paced, high-speed movement gameplay while still being readable and easy to control for most players.
 
  To achieve this, special considerations were made to wall detection, jump features, and interactions with the camera. 
  
@@ -33,7 +33,7 @@ description: A simple C++ movement demo made for a scrapped project.
 
 ### Slide
 
-Using FSM-adjacent Start, Stop, and Update functions, the slide operates using a lerp for capsule height and an animation montage with root motion for movement and visuals:
+Using standard Start, Stop, and Update functions, the slide operates using a lerp for capsule height and an animation montage with root motion for movement and visuals:
 
 
 ```cpp
@@ -214,7 +214,9 @@ void AMovementCharacter::RotateCameraOnJump(float DeltaTime)
 }
 ```
 
-Taking into account that the camera interpolation would continue even if the player moved their mouse, I added the following to the `Look()` function:
+The interpolation stops the moment the player is facing the jump direction within a small tolerance. Usually, the player will be facing that direction to some extent, so the result tends to be a smooth but noticeable adjustment. 
+
+Taking into account that the camera interpolation would play through even if the player moved their mouse, something especially noticeable for large camera adjustments, I added the following to the `Look()` function:
 ```cpp
 	if (Controller != nullptr)
 	{
@@ -222,4 +224,10 @@ Taking into account that the camera interpolation would continue even if the pla
 		bIsCameraRotating = false;
   }  
 ```
+## Improvements
+
+There's a lot that can be done to improve the demo. Naturally implementing more features like wall running, ledge grabbing, and crouching (an easy one) would probably help it feel more fleshed out. The slide could especially benefit from a forced crouch to prevent getting stuck under ledges. 
+
+
+
 
