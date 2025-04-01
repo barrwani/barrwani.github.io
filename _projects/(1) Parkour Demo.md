@@ -37,7 +37,7 @@ Using FSM-adjacent Start, Stop, and Update functions, the slide operates using a
 
 
 ```cpp
-void AShacknewsCharacter::UpdateSlide(const float DeltaTime)
+void AMovementCharacter::UpdateSlide(const float DeltaTime)
 {
 	
 		// Increment progress over time
@@ -94,7 +94,7 @@ Takes into account whether the player is facing downwards or not to test for a d
 
 
 ```cpp
-void AShacknewsCharacter::WallJump()
+void AMovementCharacter::WallJump()
 {
 	FRotator CameraRotation = GetController()->GetControlRotation();
 	// Get the forward vector of the camera
@@ -151,7 +151,7 @@ void AShacknewsCharacter::WallJump()
 To detect a wall, I used a set of wall traces in front of and to the left and right of the player:
 
 ```cpp
-void AShacknewsCharacter::WallHang()
+void AMovementCharacter::WallHang()
 {
 	// Define the start point as the actor's current location
 	FVector Start = GetActorLocation();
@@ -195,7 +195,7 @@ The camera rotation is simple yet effective, interpolating the direction the cam
 
 
 ```cpp
-void AShacknewsCharacter::RotateCameraOnJump(float DeltaTime)
+void AMovementCharacter::RotateCameraOnJump(float DeltaTime)
 {
 		// Get the current camera rotation
 		FRotator CurrentRotation = GetController()->GetControlRotation();
