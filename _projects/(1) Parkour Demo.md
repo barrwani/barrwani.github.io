@@ -220,7 +220,6 @@ Taking into account that the camera interpolation would continue even if the pla
 	{
 		// cancel camera rotation when mouse moves
 		bIsCameraRotating = false;
-    ...
   }  
 ```
 
