@@ -151,6 +151,12 @@ void AMovementCharacter::WallJump()
 }
 ```
 
+To find the front/back to determine a left or right jump, we get the cross product of the camera's forward direction relative to it's current rotation and the wall's impact normal that we get from the wall detection line trace. 
+If it is positive, we have a positive Yaw. Otherwise we have a negative Yaw. 
+
+To check whether we're facing the floor, we get the dot product of the Camera's global forward vector, calculate the dot product with the global down unit vector (-1.f on the global Z-axis), then see if that value is greater than 0.5. 
+If it is, we know that we're facing downwards, and thus can launch down. Otherwise we jump regularly. 
+
 #### Wall Detection
 To detect a wall, I used a set of wall traces in front of and to the left and right of the player:
 
@@ -230,8 +236,10 @@ Taking into account that the camera interpolation would play through even if the
 ```
 ## Improvements
 
-There's a lot that can be done to improve the demo. Naturally implementing more features like wall running, ledge grabbing, and crouching (an easy one) would probably help it feel more fleshed out. The slide could especially benefit from a forced crouch to prevent getting stuck under ledges. 
+There's a few things that can be done to improve the demo. Naturally, implementing more features like wall running, ledge grabbing, and crouching (an easy one) would probably help it feel more fleshed out. The slide could especially benefit from a forced crouch to prevent getting stuck under ledges. 
 
+It would also be beneficial to write my own custom Character Movement Component for this system, making it more easily usable by designers via blueprinting and more organized overall. 
 
+Beyond that, more polish and refinement of the base features would be a good next step too, as well as refining the visuals with custom IK. 
 
 
