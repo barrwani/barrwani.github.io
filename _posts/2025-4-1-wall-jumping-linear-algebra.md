@@ -81,11 +81,15 @@ To get this working, all we need is the Player Camera's Global Rotation vector. 
 
 We calculate the dot product of this rotation vector and the downwards unit vector, resulting in a scalar value that tells us how orthogonal the camera is to the ground. 
 
-Vectors are fully orthogonal when they are perfectly perpendicular, forming right angles.
+Here are a few key things to understand about the dot product:
 
-The closer to 0 the resulting value, the more orthogonal the two vectors are, and vice versa. The dot product of orthogonal vectors is 0. 
+- Vectors are fully orthogonal when they are perfectly perpendicular, forming right angles.
 
-The dot product of vectors forming acute angles is positive, while the dot product of values forming obtuse angles is negative. 
+- The closer to 0 the resulting value, the more orthogonal the two vectors are, and vice versa. The dot product of orthogonal vectors is 0.
+
+- The dot product is equivalent to $\text{cos } \theta$, where $\theta$ is the angle formed by the two vectors
+
+- The dot product of vectors forming acute angles is positive, while the dot product of values forming obtuse angles is negative.
 
 Because of this, we are certain that for dot product values above 0, we are facing downwards, and for values less than 0, we are facing upwards. 
 
@@ -110,6 +114,8 @@ We know this because our vectors are unit vectors (vectors with a length of 1) s
 This means that our downwards jump only triggers if the camera is 60 degrees from the horizontal.
 
 We know this because $\text{cos}^{-1}(0.5) = 60 ^{\circ}$, and the dot product is equivalent to $\text{cos } \theta$.
+
+And so we now have an adjustable downwards wall jump!
 
 ## Conclusion
 
