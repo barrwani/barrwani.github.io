@@ -1,8 +1,8 @@
 ---
 title: The Linear Algebra behind Wall Jumping
 tags: [gamedev, math, tutorial]
-style: 
-color: 
+style: border
+color: primary
 description: Going through the wall jumping implementation from my Parkour Demo and explaining the math behind it.
 ---
 {%- include mathjax.html -%}
