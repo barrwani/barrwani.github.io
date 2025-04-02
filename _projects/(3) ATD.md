@@ -16,7 +16,7 @@ Originally a game jam submission, A Troubled Double is a Crash Bandicoot: Twinsa
 
 | Platform | Engine | Duration | Team Size | Roles |
 | --------  | --------  | --------  | --------  | -------- |
-| Web/Windows | Godot | 1 month (jam), 2 months (post jam) | 4 People | Game Programming & Design, Project Management |
+| Web/Windows | Godot | 2 weeks (jam), 1 month (post jam) | 4 People | Game Programming & Design, Project Management |
 
 
 ## Responsibilities
