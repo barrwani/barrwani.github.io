@@ -28,18 +28,33 @@ Since we're only worried about the angle relative to the Wall Normal, we ignore 
 
 We get the cross product of the Camera Forward Vector and the Wall Normal Vector (order matters in cross product!!!).
 
+Here are a few key things to know about the cross product:
+
+- The cross product of two vectors results in a vector that is perpendicular to both vectors
+
+- Since it gives a perpendicular vector, it can be used to find the normal vector of a plane (Not relevant here, but good to know)
+
+- The equation for the cross product is: $a \times b = (a_yb_z - a_zb_y, a_zb_x - a_xb_z, a_xb_y - a_yb_x)$
+
+- Since our Camera and Wall vectors have no Z-value, the x and y values of the new vector will be 0.
+
 We then take a look at the Z-component of the resulting Cross Product, which is equivalent to $C_x W_y - C_y W_x$. 
 
 Since Unreal uses a left-handed coordinate system, we can determine the following:
 
 - If the resulting vector is positive, we rotate clockwise along the Z-axis, also known as a positive yaw. 
 - If the resulting vector is negative, we rotate counter-clockwise along the Z-axis, also known as a negative yaw.
+- With a right-handed coordinate system, positive would be counter-clockwise, and negative would be clockwise.
 
 <center>
 <img src="/assets/down.png" width="1500" height="590">
 </center>
 
-With a right-handed coordinate system, positive would be counter-clockwise, and negative would be clockwise. 
+The reason the polarity of the Z-component is directly equivalent to the polarity of the yaw is because yaw itself is defined as a rotation about the Z-axis. 
+
+Our cross product's Z-component calculation, $C_x W_y - C_y W_x$, also shows this, as it gives us the relative orientation of the vectors.
+
+When it is positive, the angle formed between the two vectors is a result of $C$ being rotated counter-clockwise relative to $W$, and naturally clockwise relative to $W$ when it is negative.
 
 With this, we can apply a set rotation value, allowing us to always jump in the direction we're facing!
 
@@ -86,8 +101,10 @@ Here are a few key things to understand about the dot product:
 - Vectors are fully orthogonal when they are perfectly perpendicular, forming right angles.
 
 - The closer to 0 the resulting value, the more orthogonal the two vectors are, and vice versa. The dot product of orthogonal vectors is 0.
+  
+- The equation for the dot product is $a \cdot b = a_xb_x + a_yb_y + a_zb_z$.
 
-- The dot product is equivalent to $\text{cos } \theta$, where $\theta$ is the angle formed by the two vectors
+- The dot product is equivalent to $\text{cos } \theta$, where $\theta$ is the angle formed by the two vectors.
 
 - The dot product of vectors forming acute angles is positive, while the dot product of values forming obtuse angles is negative.
 
@@ -113,7 +130,7 @@ We know this because our vectors are unit vectors (vectors with a length of 1) s
 
 This means that our downwards jump only triggers if the camera is 60 degrees from the horizontal.
 
-We know this because $\text{cos}^{-1}(0.5) = 60 ^{\circ}$, and the dot product is equivalent to $\text{cos } \theta$.
+This is the case because $\text{cos}^{-1}(0.5) = 60 ^{\circ}$, and the dot product is equivalent to $\text{cos } \theta$.
 
 And so we now have an adjustable downwards wall jump!
 
