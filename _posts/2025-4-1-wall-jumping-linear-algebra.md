@@ -67,7 +67,7 @@ With this, we can apply a set rotation value, allowing us to always jump in the 
 	SetActorRotation(Rotation);
 ```
 
-## Jumping towards the ground with Dot Product
+## Jumping Towards the Ground with Dot Product
 
 The demo also allows players to choose between a standard wall jump and a wall jump aimed towards the ground. 
 
