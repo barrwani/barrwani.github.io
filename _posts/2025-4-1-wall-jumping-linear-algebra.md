@@ -70,7 +70,7 @@ With this, we can apply a set rotation value, allowing us to always jump in the 
 The demo also allows players to choose between a standard wall jump and a wall jump aimed towards the ground. The player can do this ground jump by looking towards the ground when jumping off a wall.
 
 <center>
-<img src="/assets/down.gif" width="1500" height="590">
+<img src="/assets/down.gif" width="640" height="360">
 </center>
 
 To get this working, all we need is the Player Camera's Global Rotation vector. This happens to be a unit vector, which makes calculations easier for us.
