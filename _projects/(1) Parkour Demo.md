@@ -26,58 +26,6 @@ description: A simple C++ movement demo made for a scrapped project.
 
 ## Feature Implementation
 
-### Slide
-
-Using standard Start, Stop, and Update functions, the slide operates using a lerp for capsule height and an animation montage with root motion for movement and visuals:
-
-
-```cpp
-void AMovementCharacter::UpdateSlide(const float DeltaTime)
-{
-	
-		// Increment progress over time
-		fSlideProgress += DeltaTime / fSlideDuration;
-
-		// Ensure progress doesn't exceed 1.0
-		fSlideProgress = FMath::Clamp(fSlideProgress, 0.0f, 1.0f);
-	
-		FVector NewMeshLocation;
-
-		// Shrink Capsule Quickly
-		if(fSlideProgress <0.25f)
-		{
-			fCurrentCapsuleH = FMath::Lerp(fCapsuleHeight, fCapsuleHeight / 3, fSlideProgress*3);
-		}
-		// Resize after a pause
-		else if(fSlideProgress > 0.5f)
-		{
-			fCurrentCapsuleH = FMath::Lerp(fCapsuleHeight / 3, fCapsuleHeight, fSlideProgress);
-		}
-
-		// Smoothly Adjust Mesh for shrunken capsule
-		if(fSlideProgress < 0.5f)
-		{
-			NewMeshLocation = FMath::Lerp(vStartMeshLocation, vTargetMeshLocation, fSlideProgress*2);
-			
-		}else
-		{
-			NewMeshLocation = FMath::Lerp(vTargetMeshLocation,  vStartMeshLocation, fSlideProgress);
-		}
-
-		// Apply the new location to the mesh
-		GetMesh()->SetRelativeLocation(NewMeshLocation);
-
-		// Restore the capsule height after sliding
-		GetCapsuleComponent()->SetCapsuleHalfHeight(fCurrentCapsuleH);
-	
-		// Stop sliding when the slide is done (SlideProgress reaches 1.0)
-		if (fSlideProgress >= 1.0f)
-		{
-			bIsSliding = false;
-		}
-}
-```
-
 
 ### Wall-stuff
 
@@ -229,6 +177,61 @@ Taking into account that the camera interpolation would play through even if the
 		bIsCameraRotating = false;
   }  
 ```
+
+### Slide
+
+Using standard Start, Stop, and Update functions, the slide operates using a lerp for capsule height and an animation montage with root motion for movement and visuals.
+
+The slide also gradually adjusts the mesh to account for the shifting capsule height. 
+
+
+```cpp
+void AMovementCharacter::UpdateSlide(const float DeltaTime)
+{
+	
+		// Increment progress over time
+		fSlideProgress += DeltaTime / fSlideDuration;
+
+		// Ensure progress doesn't exceed 1.0
+		fSlideProgress = FMath::Clamp(fSlideProgress, 0.0f, 1.0f);
+	
+		FVector NewMeshLocation;
+
+		// Shrink Capsule Quickly
+		if(fSlideProgress <0.25f)
+		{
+			fCurrentCapsuleH = FMath::Lerp(fCapsuleHeight, fCapsuleHeight / 3, fSlideProgress*3);
+		}
+		// Resize after a pause
+		else if(fSlideProgress > 0.5f)
+		{
+			fCurrentCapsuleH = FMath::Lerp(fCapsuleHeight / 3, fCapsuleHeight, fSlideProgress);
+		}
+
+		// Smoothly Adjust Mesh for shrunken capsule
+		if(fSlideProgress < 0.5f)
+		{
+			NewMeshLocation = FMath::Lerp(vStartMeshLocation, vTargetMeshLocation, fSlideProgress*2);
+			
+		}else
+		{
+			NewMeshLocation = FMath::Lerp(vTargetMeshLocation,  vStartMeshLocation, fSlideProgress);
+		}
+
+		// Apply the new location to the mesh
+		GetMesh()->SetRelativeLocation(NewMeshLocation);
+
+		// Restore the capsule height after sliding
+		GetCapsuleComponent()->SetCapsuleHalfHeight(fCurrentCapsuleH);
+	
+		// Stop sliding when the slide is done (SlideProgress reaches 1.0)
+		if (fSlideProgress >= 1.0f)
+		{
+			bIsSliding = false;
+		}
+}
+```
+
 ## Improvements
 
 There's a few things that can be done to improve the demo. Naturally, implementing more features like wall running, ledge grabbing, and crouching (an easy one) would probably help it feel more fleshed out. The slide could especially benefit from a forced crouch to prevent getting stuck under ledges. 
