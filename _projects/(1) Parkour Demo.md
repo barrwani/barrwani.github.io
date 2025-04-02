@@ -33,6 +33,8 @@ description: A simple 3C's demo made in UE5 C++ for a scrapped project.
 <img src="/assets/walljumptests.gif" width="640" height="360">
 </center>
 
+I break down the math behind the wall jump [here](https://barwani.eu.org/blog/wall-jumping-linear-algebra).
+
 #### Wall Jump
 
 Launches the character in the direction they are facing relative to the wall. 
