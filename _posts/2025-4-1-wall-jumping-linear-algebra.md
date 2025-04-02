@@ -101,7 +101,9 @@ We know this because $\text{cos}^{-1}(0.5) = 60 ^{\circ}$, and the dot product i
 
 ## Conclusion
 
-And thats that! Pretty cool what basic linear algebra can achieve, and it's especially cool seeing how these different operations and values interact in-game. You might be thinking that the same approach taken for the dot product could be taken with the wall jump direction, and you'd be right! It works just as well, and might even be more elegant, but the cross product method came to mind first, and the important thing is just that it works and isn't computationally heavy. 
+And thats that! Pretty cool what basic linear algebra can achieve, and it's especially cool seeing how these different operations and values interact in-game. 
+
+You might be thinking that the same approach taken for the dot product could be taken with the wall jump direction, and you'd be right! It works just as well, and might even be more elegant, but the cross product method came to mind first, and the important thing is that it works and isn't computationally heavy. 
 
 I hope this was a fun read!
 
