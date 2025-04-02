@@ -7,7 +7,9 @@ description: Going through the wall jumping implementation from my Parkour Demo 
 ---
 {%- include mathjax.html -%}
 
-Linear Algebra plays a huge role in game development, especially within movement and projectile systems. In my [parkour demo](https://barwani.eu.org/1-parkour-demo), I make use of key Linear Algebra concepts, the Cross Product and Dot Product, to tailor the wall jumping functionality to my needs.
+Linear Algebra plays a huge role in game development, especially within movement and projectile systems. 
+
+In my [parkour demo](https://barwani.eu.org/1-parkour-demo), I make use of key Linear Algebra concepts, the Cross Product and Dot Product, to tailor the wall jumping functionality to my needs.
 
 
 ## Calculating Jump Direction using the Cross Product
@@ -67,7 +69,9 @@ With this, we can apply a set rotation value, allowing us to always jump in the 
 
 ## Deciding between Downwards and Standard Jump using Dot Product
 
-The demo also allows players to choose between a standard wall jump and a wall jump aimed towards the ground. The player can do this ground jump by looking towards the ground when jumping off a wall.
+The demo also allows players to choose between a standard wall jump and a wall jump aimed towards the ground. 
+
+The player can do this ground jump by looking towards the ground when jumping off a wall.
 
 <center>
 <img src="/assets/down.gif" width="640" height="360">
@@ -75,11 +79,15 @@ The demo also allows players to choose between a standard wall jump and a wall j
 
 To get this working, all we need is the Player Camera's Global Rotation vector. This happens to be a unit vector, which makes calculations easier for us.
 
-We calculate the dot product of this rotation vector and the downwards unit vector, resulting in a scalar value that tells us how orthogonal the camera is to the ground. Vectors are fully orthogonal when they are perfectly perpendicular, forming right angles.
+We calculate the dot product of this rotation vector and the downwards unit vector, resulting in a scalar value that tells us how orthogonal the camera is to the ground. 
+
+Vectors are fully orthogonal when they are perfectly perpendicular, forming right angles.
 
 The closer to 0 the resulting value, the more orthogonal the two vectors are, and vice versa. The dot product of orthogonal vectors is 0. 
 
-The dot product of vectors forming acute angles is positive, while the dot product of values forming obtuse angles is negative. Because of this, we are certain that for dot product values above 0, we are facing downwards, and for values less than 0, we are facing upwards. 
+The dot product of vectors forming acute angles is positive, while the dot product of values forming obtuse angles is negative. 
+
+Because of this, we are certain that for dot product values above 0, we are facing downwards, and for values less than 0, we are facing upwards. 
 
 ```cpp
 	// Calculate how much the camera is looking downward
@@ -95,7 +103,11 @@ The dot product of vectors forming acute angles is positive, while the dot produ
 	}
 ```
 
-To add some bias towards an upwards jump, we set our minimum value for downwards jumping to a dot product of 0.5, where 1 is completely down and -1 is completely up. We know this because our vectors are unit vectors (vectors with a length of 1) so the maximum possible dot product is 1. This means that our downwards jump only triggers if the camera is 60 degrees from the horizontal.
+To add some bias towards an upwards jump, we set our minimum value for downwards jumping to a dot product of 0.5, where 1 is completely down and -1 is completely up. 
+
+We know this because our vectors are unit vectors (vectors with a length of 1) so the maximum possible dot product is 1. 
+
+This means that our downwards jump only triggers if the camera is 60 degrees from the horizontal.
 
 We know this because $\text{cos}^{-1}(0.5) = 60 ^{\circ}$, and the dot product is equivalent to $\text{cos } \theta$.
 
@@ -103,11 +115,13 @@ We know this because $\text{cos}^{-1}(0.5) = 60 ^{\circ}$, and the dot product i
 
 And thats that! Pretty cool what basic linear algebra can achieve, and it's especially cool seeing how these different operations and values interact in-game. 
 
-You might be thinking that the same approach taken for the dot product could be taken with the wall jump direction, and you'd be right! It works just as well, and might even be more elegant, but the cross product method came to mind first, and the important thing is that it works and isn't computationally heavy. 
+You might be thinking that the same approach taken for the dot product could be taken with the wall jump direction, and you'd be right! 
 
-I hope this was a fun read!
+It works just as well, and might even be more elegant, but the cross product method came to mind first, and the important thing is that it works and isn't computationally heavy. 
 
-Asaad.
+I hope this was a fun (or useful) read!
+
+-Asaad.
 
 
 
