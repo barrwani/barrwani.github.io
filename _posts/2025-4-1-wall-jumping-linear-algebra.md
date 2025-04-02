@@ -28,6 +28,8 @@ Since we're only worried about the angle relative to the Wall Normal, we ignore 
 
 We get the cross product of the Camera Forward Vector and the Wall Normal Vector (order matters in cross product!!!).
 
+#### Cross Product
+
 Here are a few key things to know about the cross product:
 
 - The cross product of two vectors results in a vector that is perpendicular to both vectors
@@ -37,6 +39,8 @@ Here are a few key things to know about the cross product:
 - The equation for the cross product is: $a \times b = (a_yb_z - a_zb_y, a_zb_x - a_xb_z, a_xb_y - a_yb_x)$
 
 - Since our Camera and Wall vectors have no Z-value, the x and y values of the new vector will be 0.
+
+#### Calculation
 
 We then take a look at the Z-component of the resulting Cross Product, which is equivalent to $C_x W_y - C_y W_x$. 
 
@@ -57,6 +61,9 @@ Our cross product's Z-component calculation, $C_x W_y - C_y W_x$, also shows thi
 When it is positive, the angle formed between the two vectors is a result of $C$ being rotated counter-clockwise relative to $W$, and naturally clockwise relative to $W$ when it is negative.
 
 With this, we can apply a set rotation value, allowing us to always jump in the direction we're facing!
+
+
+#### Implementation
 
 ```cpp
 	FRotator CameraRotation = GetController()->GetControlRotation();
@@ -96,6 +103,8 @@ To get this working, all we need is the Player Camera's Global Rotation vector. 
 
 We calculate the dot product of this rotation vector and the downwards unit vector, resulting in a scalar value that tells us how orthogonal the camera is to the ground. 
 
+#### Dot Product
+
 Here are a few key things to understand about the dot product:
 
 - Vectors are fully orthogonal when they are perfectly perpendicular, forming right angles.
@@ -108,7 +117,22 @@ Here are a few key things to understand about the dot product:
 
 - The dot product of vectors forming acute angles is positive, while the dot product of values forming obtuse angles is negative.
 
+#### Calculation
+
 Because of this, we are certain that for dot product values above 0, we are facing downwards, and for values less than 0, we are facing upwards. 
+
+
+To add some bias towards an upwards jump, we set our minimum value for downwards jumping to a dot product of 0.5, where 1 is completely down and -1 is completely up. 
+
+We know this because our vectors are unit vectors (vectors with a length of 1) so the maximum possible dot product is 1. 
+
+This means that our downwards jump only triggers if the camera is 60 degrees from the horizontal.
+
+This is the case because $\text{cos}^{-1}(0.5) = 60 ^{\circ}$, and the dot product is equivalent to $\text{cos } \theta$.
+
+And so we now have an adjustable downwards wall jump!
+
+#### Implementation
 
 ```cpp
 	// Calculate how much the camera is looking downward
@@ -123,16 +147,6 @@ Because of this, we are certain that for dot product values above 0, we are faci
 		LaunchVelocity.Z = DownwardsJumpVelocity; // Launch downwards
 	}
 ```
-
-To add some bias towards an upwards jump, we set our minimum value for downwards jumping to a dot product of 0.5, where 1 is completely down and -1 is completely up. 
-
-We know this because our vectors are unit vectors (vectors with a length of 1) so the maximum possible dot product is 1. 
-
-This means that our downwards jump only triggers if the camera is 60 degrees from the horizontal.
-
-This is the case because $\text{cos}^{-1}(0.5) = 60 ^{\circ}$, and the dot product is equivalent to $\text{cos } \theta$.
-
-And so we now have an adjustable downwards wall jump!
 
 ## Conclusion
 
