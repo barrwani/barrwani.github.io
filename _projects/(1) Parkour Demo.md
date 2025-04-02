@@ -26,6 +26,7 @@ description: A simple 3C's demo made in UE5 C++ for a scrapped project.
 
 ## Feature Implementation
 
+The main movement features are the wall cling/wall jump and the slide. 
 
 ### Wall-stuff
 
@@ -102,6 +103,8 @@ If it is positive, we have a positive Yaw. Otherwise we have a negative Yaw.
 To check whether we're facing the floor, we get the dot product of the Camera's global forward vector, calculate the dot product with the global down unit vector (-1.f on the global Z-axis), then see if that value is greater than 0.5. 
 If it is, we know that we're facing downwards, and thus can launch down. Otherwise we jump regularly. 
 
+Again, I go into detail on this [here](https://barwani.eu.org/blog/wall-jumping-linear-algebra).
+
 #### Wall Detection
 To detect a wall, I used a set of wall traces in front of and to the left and right of the player:
 
@@ -139,7 +142,7 @@ void AMovementCharacter::WallHang()
 }
 ```
 
-This made wall clinging, which was a core part of the movement, easy without requiring the player to face the wall. The line traces only being 100 units ensured that wall hanging was almost always intentional. 
+This made wall clinging, which was a core part of the movement, easy without requiring the player to completely face the wall. The line traces only being 100 units ensured that wall hanging was almost always intentional. 
 
 The wall cling function being called above is simple, slowing down gravity by interpolating downwards velocity towards 0 and posing the player towards the wall.
 
