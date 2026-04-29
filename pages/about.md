@@ -5,28 +5,22 @@ permalink: /about/
 weight: 3
 ---
 
-# **NYC-based Gameplay Programmer & Computer Science Student**
+# **NYC-based Gameplay Programmer & Technical Designer**
 
 <img style="float: left; padding-right:20px" src="/assets/barwani.webp">
 
-I'm a Gameplay Programmer working towards a B.A in Computer Science and Linguistics (+ Game Design minor) at NYU's College of Arts and Sciences. 
+I started out making games in Pygame on a Raspberry Pi I used for my CS projects in middle school. I really enjoyed the process of making something tangible and playable, soon switching to Godot where I made games with a small team I formed in high school. This is where I built up most of my game programming principles and established an understanding of the fundamentals of game design.
 
-Most of my 3D work revolves around 3C's and NPC AI, so I'm familiar with Finite State Machines, Character Movement techniques (Custom Character Movement Components), 3D Linear Algebra, Locomotion Systems, and Inverse Kinematics (IK). 
 
-My 2D work, on the other hand, tends to be more generalist and ranges from character movement and NPC AI to UI/UX and environment programming.
+I started working on [Amalgam](https://playamalgam.com/) in early 2025, where I took responsibility for the player 3Cs (the movement system in particular), design and implementation of the roguelike upgrade system, and the weapon deployment mechanic, alongside a bunch of other misc tasks.  
 
-I'm currently working at NYU's High Performance Computing (HPC) Department under the [High Speed Research Network](https://hsrn.nyu.edu/) (HSRN) team on an open-source networking framework called Corelink. My work so far has involved rewriting documentation, integrating Corelink into Unreal Engine 5, and drafting plans for a Godot Engine client/plugin. 
 
-I'm a big Godot enthusiast, with it being my first game engine. I'm also a huge fan of Destiny/D2, Warframe, Titanfall 2, and Katana Zero. Aside from games, I play bass guitar, practice Kendo (Japanese fencing), and do some occasional photography.
+I'm a big Godot enthusiast, with it being my first proper game engine. I'm also a huge fan of Destiny/D2, Warframe, Titanfall 2, and Katana Zero. Aside from games, I play bass guitar, practice Kendo (Japanese fencing), and do some occasional photography.
 
-## Skills
+## Technical Skills
 
-**Languages:** C++, C, Python, GDScript, Java, Shell, Bash, Assembly
+**Languages:** C++, C#, C, Python, GDScript, Java, Shell, Bash, Assembly
 
-**Tools:** Unreal Engine, Godot Engine, Git/GitHub, Docker, Singularity, RHEL (Rocky), SDL2, OpenGL
+**Tools:** Unreal Engine, Godot Engine, Git/GitHub, Diversion
 
-**Skills:** Linear Algebra, Finite State Machines (FSM), Asset Integration, AI Programming, HPC, CTF
-
-**Relevant Coursework:** Honors Linear Algebra, Computer Graphics,
-   Data Structures and Algorithms, OOP in C++, Mechanics, Computer Systems Organisation, 
-   Operating Systems.
+**Skills:** Linear Algebra
