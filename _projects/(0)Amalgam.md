@@ -19,6 +19,11 @@ Partnered with your pet gun, descend to Earth's core and confront the Great Mach
 </iframe>
 </div>
 
+| Platform | Engine | Duration | Team Size | Roles |
+| --------  | --------  | --------  | --------  | -------- |
+| PC | Unreal | Ongoing | 8 People | Game Programming & Design |
+
+
 ## Responsibilities 
 
 - Player Movement System Design + Implementation in UE5 C++ Character Movement Component
