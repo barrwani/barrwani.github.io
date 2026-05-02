@@ -19,6 +19,7 @@ Partnered with your pet gun, descend to Earth's core and confront the Great Mach
 </iframe>
 </div>
 
+<center></center>
 | Platform | Engine | Duration | Team Size | Roles |
 | --------  | --------  | --------  | --------  | -------- |
 | PC | Unreal | Ongoing | 8 People | Game Programming & Design |
