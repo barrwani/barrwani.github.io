@@ -1,7 +1,7 @@
 ---
 name: Unreal Engine 5 Parkour Demo
 tools: [Unreal, C++]
-image: /assets/oldman.png
+image: /assets/movementdemo.gif
 description: A simple 3C's demo made in UE5 C++ for a scrapped project.
 ---
 
