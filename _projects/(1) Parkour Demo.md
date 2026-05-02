@@ -2,12 +2,12 @@
 name: Unreal Engine 5 Parkour Demo
 tools: [Unreal, C++]
 image: /assets/movementdemo.gif
-description: A simple 3C's demo made in UE5 C++ for a scrapped project.
+description: A simple 3C's demo made in UE5 C++.
 ---
 
 # Parkour Demo
 
- A simple C++ movement demo made for a scrapped project. The player can sprint, slide, cling to walls, and wall jump. The goal of the demo was to demonstrate fast paced, high-speed movement gameplay while still being readable and easy to control for most players.
+ A simple C++ movement demo. The player can sprint, slide, cling to walls, and wall jump. The goal of the demo was to demonstrate fast paced, high-speed movement gameplay while still being readable and easy to control for most players.
 
  To achieve this, special considerations were made to wall detection, jump features, and interactions with the camera. 
  
