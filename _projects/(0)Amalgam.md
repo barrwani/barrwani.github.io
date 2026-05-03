@@ -2,7 +2,7 @@
 name: AMALGAM
 tools: [Unreal, C++]
 image: /assets/amalgam.gif
-description: A rogue-lite movement FPS where every upgrade transforms your sentient gun.
+description: A rogue-lite movement FPS where you partner with a sentient pet gun.
 featured: true
 
 ---
