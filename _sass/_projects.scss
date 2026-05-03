@@ -17,20 +17,19 @@
 .featured-project {
   .project.card {
     .card-img-top {
-      min-height: 300px;
+      width: 100%;
+      height: 400px;
       object-fit: cover;
     }
-
     .card-body {
-      padding: 1.5rem;
-
+      padding: 2rem;
       .card-title {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
       }
-
       .card-text {
-        font-size: 1.1rem;
+        font-size: 1.15rem;
       }
     }
   }
+}
 }
