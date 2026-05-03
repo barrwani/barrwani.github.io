@@ -48,7 +48,7 @@ Partnered with your pet gun, descend to Earth's core and confront the Great Mach
 
 - Player Movement System Design + Implementation in UE5 C++ Character Movement Component
 - Design and implementation of Combat Systems, including roguelike progression and general combat.
-- Designing and Implementing the weapon command mechanics, involving gun deployment/recall, abilities, death, targeting, and basic AI behaviour.
-- Working extensively on 3Cs and game feel, implementing camera reorientation for melee/wallrun/walljump , hand-tuned
-recoil values, and working with a sound designer to craft satisfying gamefeel.
+- Designing and Implementing the weapon command mechanics: deployment/recall, abilities, targeting, and basic AI behaviour.
+- Working extensively on 3Cs and game feel
+- Working with a sound designer to craft satisfying gamefeel.
 - Producing some of the SFX/3D animations
