@@ -1,5 +1,5 @@
 ---
-name: Amalgam
+name: AMALGAM
 tools: [Unreal, C++]
 image: /assets/amalgam.gif
 description: A rogue-lite movement FPS where every upgrade transforms your sentient gun.
@@ -34,7 +34,7 @@ Partnered with your pet gun, descend to Earth's core and confront the Great Mach
     <tbody>
       <tr>
         <td>PC</td>
-        <td>Unreal</td>
+        <td>Unreal Engine 5</td>
         <td>Ongoing</td>
         <td>8 People</td>
         <td>Game Programming & Design</td>
