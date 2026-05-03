@@ -19,15 +19,18 @@ Partnered with your pet gun, descend to Earth's core and confront the Great Mach
 </iframe>
 </div>
 
-<center></center>
+<center>
 
 | Platform | Engine | Duration | Team Size | Roles |
 | --------  | --------  | --------  | --------  | -------- |
 | PC | Unreal | Ongoing | 8 People | Game Programming & Design |
-
+</center>
 
 ## Responsibilities 
 
 - Player Movement System Design + Implementation in UE5 C++ Character Movement Component
 - Design and implementation of Combat Systems, including roguelike progression and general combat.
-- Implemented an 'Emotion System' framework that allows the weapon to **naturally react to player actions and in-game events**, with emotions placed on a 2-axis grid. The closest emotion within radius based on X,Y values would be transitioned to.
+- Designing and Implementing the weapon command mechanics, involving gun deployment/recall, abilities, death, targeting, and basic AI behaviour.
+- Working extensively on 3Cs and game feel, implementing camera reorientation for melee/wallrun/walljump , hand-tuned
+recoil values, and working with a sound designer to craft satisfying gamefeel.
+- Producing some of the SFX/3D animations
