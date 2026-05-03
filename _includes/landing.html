@@ -35,7 +35,7 @@
 
   {% endfor %}
 
-  <!-- Local Projects -->
+<!-- Local Projects -->
 {% for project in site.projects %}
   {%- assign project_type  = "local" -%}
   {%- assign project_id    = project.name | slugify -%}
@@ -44,7 +44,12 @@
   {%- assign project_desc  = project.description -%}
   {%- assign project_tools = project.tools -%}
   {%- assign featured      = project.featured -%}
+  {%- if project.external_url -%}
+    {%- assign project_url = project.external_url -%}
+    {%- assign external    = true -%}
+  {%- else -%}
+    {%- assign project_url = project.url | relative_url -%}
+    {%- assign external    = false -%}
+  {%- endif -%}
   {% include projects/project-card.html %}
 {% endfor %}
-
-</div>
