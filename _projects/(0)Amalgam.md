@@ -3,7 +3,7 @@ name: Amalgam
 tools: [Unreal, C++]
 image: /assets/amalgam.gif
 description: A rogue-lite movement FPS where every upgrade transforms your sentient gun.
-
+featured: true
 
 ---
 
