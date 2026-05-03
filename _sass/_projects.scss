@@ -15,9 +15,22 @@
   }
 }
 .featured-project {
-  column-span: all;
-  
   .project.card {
-    max-width: 1200px;
+    .card-img-top {
+      min-height: 300px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 1.5rem;
+
+      .card-title {
+        font-size: 1.5rem;
+      }
+
+      .card-text {
+        font-size: 1.1rem;
+      }
+    }
   }
 }
