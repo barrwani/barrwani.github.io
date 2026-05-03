@@ -1,7 +1,3 @@
-.card-columns {
-  column-count: 3;
-}
-
 .project.card {
   border-radius: $rounded-borders;
   text-decoration: none !important;
@@ -18,8 +14,9 @@
 
 .featured-project {
   column-span: all;
-
+  display: flex;
+  justify-content: center;
   .project.card {
-    max-width: 66%;
+    max-width: 600px; 
   }
 }
